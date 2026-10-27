@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="bootsrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+.carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+}
+body {
+    padding-top: 13px;
+}
+.navbar {
+    background: linear-gradient(to right, #d360bc, #bae6fc);
+}
+.bg-warning {
+    background: linear-gradient(to right, #d360bc, #bae6fc) !important;
+    color: white;
+}
+footer {
+    background: linear-gradient(to right, #d360bc, #bae6fc);
+}
+</style>
+  </head>
+  <body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<div class="container-fluid">
+<h3><i class="fas fa-cart-plus text-success me-2"></i></h3>
+<a class="navbar-brand fw-bold" href="layout.html">DIMAS STORE</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto me-4">
+<li class="nav-item">
+<a class="nav-link active" href="layout.html">BERANDA</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">RESELLER</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">HUBUNGI KAMI</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">BANTUAN</a>
+</li>
+</ul>
+<form class="d-flex">
+<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+<button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<div class="icon mt-2">
+<h5>
+<i class="fas fa-cart-plus me-3"></i>
+<i class="fas fa-envelope me-3"></i>
+<i class="fas fa-bell me-3"></i>
+</h5>
+</div>
+</div>
+</div>
+</nav>
+ <!-- Bootstrap JS dari file lokal -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="layout.html">
+      <i class="fas fa-cart-plus text-success me-2"></i> DIMAS STORE
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="layout.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Reseller</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Hubungi Kami</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Bantuan</a></li>
+      </ul>
+
+      <form class="d-flex me-3">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      <div class="d-flex align-items-center">
+        <i class="fas fa-cart-plus me-3"></i>
+        <i class="fas fa-envelope me-3"></i>
+        <i class="fas fa-bell me-3"></i>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Content -->
+<div class="container-fluid mt-5">
+<div class="row g-0">
+<!-- Sidebar -->
+<div class="col-md-2 bg-light">
+  <ul class="list-group list-group-flush p-2 pt-4">
+    <li class="list-group-item bg-warning">
+      <i class="fas fa-list"></i> Kategori Produk
+    </li>
+    <a href="peralatan_elektronik.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Peralatan Elektronik
+    </a>
+    <a href="aksesori.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Accesoris Elektronik
+    </a>
+    <a href="fashion_wanita.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Fashion Wanita
+    </a>
+    <a href="fashion_pria.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Fashion Pria
+    </a>
+    <a href="otomotif.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Otomotif
+    </a>
+    <a href="olahraga.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Olahraga
+    </a>
+  </ul>
+</div>
+
+<!-- Carousel -->
+<div class="col-md-10">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="logo.jpeg" class="d-block w-100 img-fluid" alt="Slide 1">
+</div>
+<div class="carousel-item">
+<img src="logo2.jpeg" class="d-block w-100 img-fluid" alt="Slide 2">
+</div>
+<div class="carousel-item">
+<img src="logo3.jpeg" class="d-block w-100 img-fluid" alt="Slide 3">
+</div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</a>
+</div>
+<!-- Produk Terbaru Section -->
+<h4 class="text-center fw-bold my-4">Peralatan Elektronik</h4>
+<div class="container">
+  <div class="row">
+    <!-- Ulangi blok produk 8 kali -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="fitnes.jpeg" class="card-img-top img-fluid" alt="Produk 1">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">Alat Fitness Treadmill iReborn Paris</h5>
+          <p class="card-text">Keunggulan: desain sporty, LCD 7", auto incline 16 level, cushion deck nyaman, banyak program, beban 120 kg, multifungsi massager & sit-up.</p>
+          <!-- Rating -->
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <!-- Tombol -->
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="raket.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">XRAKET FELET ZYNGER WOVEN</h5>
+          <p class="card-text">Felet Zynger 100% original – berat 82g (4U), max tarikan 36 lbs, shaft medium fleksibel 7mm, grip G1, balance 290mm, grommet 76.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+<!-- Produk 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="alatolahraga.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">TrailTop Yoga Mat 10mm Extra Tebal 185x80cm Anti Slip Matras Senam Pilates Fitness dengan Tas</h5>
+          <p class="card-text">Matras olahraga TrailTop Yoga Mat, ukuran 185 × 80 cm, ketebalan ±10 mm, berat ±815 gram. Tekstur garis horizontal anti‑slip, bahan premium ABS & acrylic, nyaman untuk yoga maupun olahraga.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 4 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="alatolahraga2.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">DUMBBELL PVC 6 KG 5 kg 4kg DUMBELL BARBEL ALAT LATIHAN OLAHRAGA GYM FITNES DUMBEL 6 KILOGRAM HOME WORKOUT</h5>
+          <p class="card-text">Produk beban olahraga isi pasir besi, berat 1–10 kg (toleransi ±3%). Sudah terisi penuh, siap pakai tanpa perlu tambahan isi. Warna tersedia sesuai variasi pilihan.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 5 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="alatolahraga3.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">Pull Up Bar Adjustable 60-100 CM Alat Fitness OlahRaga Rumahan</h5>
+          <p class="card-text">Pull Up Bar besi dengan busa & karet, panjang adjustable 60–100 cm, beban maksimal hingga 100 kg. Bisa dipasang di pintu untuk latihan pull up, sit up, peregangan, dan body builder. Tabung baja tebal, kuat, mudah dipasang/dilepas.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 6 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="alatolahraga4.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">Power Twister 30 KG - 100 KG Alat Olahraga Power Bender Untuk Pembentuk Otot Lengan Perut Dan Dada Alat Fitnes Simpel XQZ</h5>
+          <p class="card-text">Alat olahraga Power Twister 30Kg, dirancang oleh ahli fitness internasional, portable dan mudah dibawa ke mana saja. Cocok untuk anak muda atau siapa saja yang ingin membentuk otot lengan dengan cepat tanpa perlu ke gym. Terbuat dari bahan kuat, efektif membentuk tubuh atletis secara privat di rumah, kos, apartemen, kantor, maupun saat bepergian.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 7 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="alatolahraga5.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">Adjustable Gym Bench STRENGTHBAE Kursi Bangku Fitness Flat Incline Bench Press</h5>
+          <p class="card-text">Adjustable Bench Strengthbae dengan sandaran punggung dan dudukan yang bisa diatur dari flat hingga upright, pad tebal nyaman, struktur kuat menahan beban >200 kg. Dilengkapi roda untuk memudahkan pemindahan serta band peg untuk resistance band.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 8 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="alatolahraga6.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">GOKOTTA Bola Yoga Gym Ball 55/65/75CM Pilates Fitness Senam Olahraga + Pompa | Bola Keseimbangan Anti Slip</h5>
+          <p class="card-text">Bola yoga/gym ball GOKOTTA, cocok untuk yoga, pilates, senam, stretching, latihan keseimbangan & fitness. Membantu fleksibilitas dan latihan berbagai bagian tubuh, praktis digunakan di rumah maupun gym.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white mt-5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3">
+<h4>LAYANAN PELANGGAN</h4>
+<p>Bantuan pemesanan, pengiriman, dan informasi produk kami siap melayani Anda.
+</p>
+</div>
+<div class="col-md-3">
+<h4>TENTANG KAMI</h4>
+<p>Kami berkomitmen menghadirkan produk berkualitas dengan pelayanan terbaik.
+</p>
+</div>
+<div class="col-md-3">
+<h4>MITRA KERJA SAMA</h4>
+<p>Terbuka untuk kolaborasi dan kemitraan bisnis yang saling menguntungkan.
+</p>
+</div>
+<div class="col-md-3">
+<h4>HUBUNGI KAMI</h4>
+<p>Silakan hubungi kami untuk pertanyaan, saran, atau kerja sama lebih lanjut.
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<div class="copyright text-center text-white font-weight-bold bg-warning p-2">
+<span> DEVELOP BY:</span> <i class="far fa-copyright"></i> Muhammad Dimas Alvin Pratama
+</div>
+    <script src="bootsrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="bootsrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+.carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+}
+body {
+    padding-top: 13px;
+}
+.navbar {
+    background: linear-gradient(to right, #d360bc, #bae6fc);
+}
+.bg-warning {
+    background: linear-gradient(to right, #d360bc, #bae6fc) !important;
+    color: white;
+}
+footer {
+    background: linear-gradient(to right, #d360bc, #bae6fc);
+}
+</style>
+  </head>
+  <body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<div class="container-fluid">
+<h3><i class="fas fa-cart-plus text-success me-2"></i></h3>
+<a class="navbar-brand fw-bold" href="layout.html">DIMAS STORE</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto me-4">
+<li class="nav-item">
+<a class="nav-link active" href="layout.html">BERANDA</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">RESELLER</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">HUBUNGI KAMI</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">BANTUAN</a>
+</li>
+</ul>
+<form class="d-flex">
+<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+<button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<div class="icon mt-2">
+<h5>
+<i class="fas fa-cart-plus me-3"></i>
+<i class="fas fa-envelope me-3"></i>
+<i class="fas fa-bell me-3"></i>
+</h5>
+</div>
+</div>
+</div>
+</nav>
+ <!-- Bootstrap JS dari file lokal -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="layout.html">
+      <i class="fas fa-cart-plus text-success me-2"></i> DIMAS STORE
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="layout.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Reseller</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Hubungi Kami</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Bantuan</a></li>
+      </ul>
+
+      <form class="d-flex me-3">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      <div class="d-flex align-items-center">
+        <i class="fas fa-cart-plus me-3"></i>
+        <i class="fas fa-envelope me-3"></i>
+        <i class="fas fa-bell me-3"></i>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Content -->
+<div class="container-fluid mt-5">
+<div class="row g-0">
+<!-- Sidebar -->
+<div class="col-md-2 bg-light">
+  <ul class="list-group list-group-flush p-2 pt-4">
+    <li class="list-group-item bg-warning">
+      <i class="fas fa-list"></i> Kategori Produk
+    </li>
+    <a href="peralatan_elektronik.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Peralatan Elektronik
+    </a>
+    <a href="aksesori.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Accesoris Elektronik
+    </a>
+    <a href="fashion_wanita.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Fashion Wanita
+    </a>
+    <a href="fashion_pria.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Fashion Pria
+    </a>
+    <a href="otomotif.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Otomotif
+    </a>
+    <a href="olahraga.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Olahraga
+    </a>
+  </ul>
+</div>
+
+<!-- Carousel -->
+<div class="col-md-10">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="logo.jpeg" class="d-block w-100 img-fluid" alt="Slide 1">
+</div>
+<div class="carousel-item">
+<img src="logo2.jpeg" class="d-block w-100 img-fluid" alt="Slide 2">
+</div>
+<div class="carousel-item">
+<img src="logo3.jpeg" class="d-block w-100 img-fluid" alt="Slide 3">
+</div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</a>
+</div>
+<!-- Produk Terbaru Section -->
+<h4 class="text-center fw-bold my-4">Peralatan Elektronik</h4>
+<div class="container">
+  <div class="row">
+    <!-- Ulangi blok produk 8 kali -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="velgninja.jpeg" class="card-img-top img-fluid" alt="Produk 1">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">Velg CMG Ninja</h5>
+          <p class="card-text">Velg CMG Exact Ninja: palang 10, ring 17, CNC alloy kuat, sporty, cocok Ninja R/RR/SS.</p>
+          <!-- Rating -->
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <!-- Tombol -->
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="manisanninja.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">XYZ PAKETAN KHUSUS 12.12 NINJA R SS RR OLD RR NEW ZX 150 KRR 150 ALUMINIUM FULL CNC</h5>
+          <p class="card-text">Paket aksesoris motor berbahan aluminium alloy full CNC, terdiri dari 10 part: cover engine kanan kiri, cover superkips, cover gear chain, cover pump, manisan gear flange, tutup rangka, bracket stut kopling, tutup oli mesin, jalu stang two tone, dan bracket selang rem depan.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+<!-- Produk 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="knalpotfizr.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">knalpot premium fizr/fiz/f1zr/force1 prepet pro max sultan el9</h5>
+          <p class="card-text">Knalpot EL9 Exhaust untuk motor Fizr/Fiz/F1ZR/Force1, tipe Premium Pro Max Sultan. Material slincer aluminium ujung lurus, perut full press, karakter suara keras agak brisik.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 4 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="kodokan.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">manifol kodok fiz r membran ninja kodokan membran ninja</h5>
+          <p class="card-text">kodokan fizr mengunakan membran ninja v force 3 kelengkapan smembran intake manifol perpak baut</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 5 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="shock.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">Shock Ohlins</h5>
+          <p class="card-text">Shock Ohlins: suspensi premium motor sport, nyaman, stabil, performa balap.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 6 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="biled.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">BILED PADDLE PRO7 NINJA SS ORIGINAL SROUND WRGB WELCOME LIGHT 210 MODUL</h5>
+          <p class="card-text">Shroud biled projector lens dengan voltage DC 9–16V, power ±10W, bahan premium ABS & acrylic. Tipe WRGB memiliki 4 kabel (2 kabel +/–, 2 kabel sein kiri/kanan). Paket lengkap termasuk: Batok lampu Ninja SS original baru, Shroud WRGB welcome light, Devil RGB LED padat, Braket biled, dan relay biled.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 7 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="head.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">XYZ CYLINDER HEAD KOP BILLET F1ZR FIZ FORCE 1 SS TWO FULL CNC</h5>
+          <p class="card-text">Cylinder head XYZ Kop Billet untuk F1ZR/Fiz/Force1/SS Two, bahan aluminium alloy dengan proses full CNC. Harga sudah termasuk squish, tersedia varian Head STD dan Head Blank.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 8 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="postep.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">FootStep Vnd Fizr Fiz Force 1 / Step Belakang Vnd Fizr Fiz Force 1</h5>
+          <p class="card-text">Footstep belakang VND Original 100% untuk motor Fizr/Fiz/Force1. Bahan CNC berkualitas, 1 set kanan dan kiri, warna silver.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white mt-5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3">
+<h4>LAYANAN PELANGGAN</h4>
+<p>Bantuan pemesanan, pengiriman, dan informasi produk kami siap melayani Anda.
+</p>
+</div>
+<div class="col-md-3">
+<h4>TENTANG KAMI</h4>
+<p>Kami berkomitmen menghadirkan produk berkualitas dengan pelayanan terbaik.
+</p>
+</div>
+<div class="col-md-3">
+<h4>MITRA KERJA SAMA</h4>
+<p>Terbuka untuk kolaborasi dan kemitraan bisnis yang saling menguntungkan.
+</p>
+</div>
+<div class="col-md-3">
+<h4>HUBUNGI KAMI</h4>
+<p>Silakan hubungi kami untuk pertanyaan, saran, atau kerja sama lebih lanjut.
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<div class="copyright text-center text-white font-weight-bold bg-warning p-2">
+<span> DEVELOP BY:</span> <i class="far fa-copyright"></i> Muhammad Dimas Alvin Pratama
+</div>
+    <script src="bootsrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

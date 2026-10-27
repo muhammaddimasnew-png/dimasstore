@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="bootsrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+.carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+}
+body {
+    padding-top: 13px;
+}
+.navbar {
+    background: linear-gradient(to right, #d360bc, #bae6fc);
+}
+.bg-warning {
+    background: linear-gradient(to right, #d360bc, #bae6fc) !important;
+    color: white;
+}
+footer {
+    background: linear-gradient(to right, #d360bc, #bae6fc);
+}
+</style>
+  </head>
+  <body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<div class="container-fluid">
+<h3><i class="fas fa-cart-plus text-success me-2"></i></h3>
+<a class="navbar-brand fw-bold" href="layout.html">DIMAS STORE</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto me-4">
+<li class="nav-item">
+<a class="nav-link active" href="layout.html">BERANDA</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">RESELLER</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">HUBUNGI KAMI</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">BANTUAN</a>
+</li>
+</ul>
+<form class="d-flex">
+<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+<button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<div class="icon mt-2">
+<h5>
+<i class="fas fa-cart-plus me-3"></i>
+<i class="fas fa-envelope me-3"></i>
+<i class="fas fa-bell me-3"></i>
+</h5>
+</div>
+</div>
+</div>
+</nav>
+ <!-- Bootstrap JS dari file lokal -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="layout.html">
+      <i class="fas fa-cart-plus text-success me-2"></i> DIMAS STORE
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="layout.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Reseller</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Hubungi Kami</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Bantuan</a></li>
+      </ul>
+
+      <form class="d-flex me-3">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      <div class="d-flex align-items-center">
+        <i class="fas fa-cart-plus me-3"></i>
+        <i class="fas fa-envelope me-3"></i>
+        <i class="fas fa-bell me-3"></i>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Content -->
+<div class="container-fluid mt-5">
+<div class="row g-0">
+<!-- Sidebar -->
+<div class="col-md-2 bg-light">
+  <ul class="list-group list-group-flush p-2 pt-4">
+    <li class="list-group-item bg-warning">
+      <i class="fas fa-list"></i> Kategori Produk
+    </li>
+    <a href="peralatan_elektronik.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Peralatan Elektronik
+    </a>
+    <a href="aksesori.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Accesoris Elektronik
+    </a>
+    <a href="fashion_wanita.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Fashion Wanita
+    </a>
+    <a href="fashion_pria.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Fashion Pria
+    </a>
+    <a href="otomotif.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Otomotif
+    </a>
+    <a href="olahraga.html" class="list-group-item list-group-item-action">
+      <i class="fas fa-angle-right"></i> Olahraga
+    </a>
+  </ul>
+</div>
+
+<!-- Carousel -->
+<div class="col-md-10">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="logo.jpeg" class="d-block w-100 img-fluid" alt="Slide 1">
+</div>
+<div class="carousel-item">
+<img src="logo2.jpeg" class="d-block w-100 img-fluid" alt="Slide 2">
+</div>
+<div class="carousel-item">
+<img src="logo3.jpeg" class="d-block w-100 img-fluid" alt="Slide 3">
+</div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</a>
+</div>
+<!-- Produk Terbaru Section -->
+<h4 class="text-center fw-bold my-4">Peralatan Elektronik</h4>
+<div class="container">
+  <div class="row">
+    <!-- Ulangi blok produk 8 kali -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="intercooler.jpeg" class="card-img-top img-fluid" alt="Produk 1">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">Pendingin HP JETE PX2 Magnetic</h5>
+          <p class="card-text">Fan 7 blade, airflow max 4.85 CFM, noise 38 dBA, input DC 5V/3A via Type‑C, rotasi 360°, ukuran 61.5×111×36 mm, berat 81.9 g, material aluminium + plastik.</p>
+          <!-- Rating -->
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <!-- Tombol -->
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="kipasaksesosris.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">GOOJODOQ GFS007 Mini kipas</h5>
+          <p class="card-text">Kipas genggam & desktop GOOJODOQ MINI – motor brushless 20.000 RPM, angin hingga 9 m/s (10× lebih kuat), ukuran mini 125×61×36 mm (151 g), 100 level kecepatan, layar LED + tali gantung, baterai 4000mAh tahan 2–12 jam, isi ulang Type‑C.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+<!-- Produk 3 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="airpods5.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">AirPods 5</h5>
+          <p class="card-text">AirPods 5: desain open‑ear ringan, chip H2, ANC lebih kuat, Spatial Audio, Siri AI terbaru, Live Translation, tahan debu & air (IP57), baterai ±5 jam.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 4 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="mouse.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">MOFii Mouse Wireless Gaming</h5>
+          <p class="card-text">Mouse nirkabel USB, bahan ABS, ukuran 114×72×40 mm, berat 90 g, 6 tombol + DPI, sensor KA8, resolusi 800/1200/1600, kecepatan 30 inci/detik, baterai Li‑Po 400mAh isi ulang via Type‑C, jarak efektif 10 m, konsumsi daya rendah, kompatibel Windows/macOS/Linux.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 5 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="otg.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">NYK USB HUB 7 Port Cable 1M OTG</h5>
+          <p class="card-text">USB HUB 7 port, input USB 3.0, output 1×USB 3.0 + 6×USB 2.0, mendukung OTG Type‑C, kabel 1 m, dimensi 145×29×10 mm, material aluminium, kompatibel Windows/macOS/Android.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 6 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="keyboard.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">Rexus K9G Keyboard Gaming Membrane TKL</h5>
+          <p class="card-text">Keyboard 87 keys, LED 6 warna campuran dengan 3 mode, dimensi 36.7×14×3.5 cm, berat 472 g, tegangan 5V/100mA, material ABS, kompatibel Windows XP/7/8/10 & macOS.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 7 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="fanlaptop.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">FANTECH NOTEBOOK COOLER RGB NC13</h5>
+          <p class="card-text">Cooling pad laptop, 2 kipas 125 mm, kecepatan 1400 RPM, airflow stabil, noise max 38 dBA, input DC 5V/0.72A, daya 3.5W, port USB 2.0 ×2, material ABS + mesh, dimensi 360×260×32 mm, cocok untuk laptop 9–16.5 inci.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+    <!-- Produk 8 -->
+    <div class="col-md-3 mb-4">
+      <div class="card text-center">
+        <img src="kontak.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+        <div class="card-body bg-light">
+          <h5 class="card-title fw-bold">ARCHITECH MJ02 Stop Kontak MEJA SLIM</h5>
+          <p class="card-text">Stop kontak meja slim, 7 port kombinasi Jerman/Universal + USB/HDMI/Cat6.</p>
+          <div class="mb-2">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star-half-alt text-warning"></i>
+            <i class="far fa-star text-warning"></i>
+          </div>
+          <a href="#" class="btn btn-primary btn-sm me-2">Detail</a>
+          <a href="#" class="btn btn-danger btn-sm">Harga</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white mt-5">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-3">
+<h4>LAYANAN PELANGGAN</h4>
+<p>Bantuan pemesanan, pengiriman, dan informasi produk kami siap melayani Anda.
+</p>
+</div>
+<div class="col-md-3">
+<h4>TENTANG KAMI</h4>
+<p>Kami berkomitmen menghadirkan produk berkualitas dengan pelayanan terbaik.
+</p>
+</div>
+<div class="col-md-3">
+<h4>MITRA KERJA SAMA</h4>
+<p>Terbuka untuk kolaborasi dan kemitraan bisnis yang saling menguntungkan.
+</p>
+</div>
+<div class="col-md-3">
+<h4>HUBUNGI KAMI</h4>
+<p>Silakan hubungi kami untuk pertanyaan, saran, atau kerja sama lebih lanjut.
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<div class="copyright text-center text-white font-weight-bold bg-warning p-2">
+<span> DEVELOP BY:</span> <i class="far fa-copyright"></i> Muhammad Dimas Alvin Pratama
+</div>
+    <script src="bootsrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
